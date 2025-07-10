@@ -14,13 +14,8 @@ jobs:
         steps:
             - name: "running on main push"
               run: echo "Running on main push"
-<<<<<<< HEAD
-                none
-=======
-
->>>>>>> 9b3cf8b0dc961e9173bad14bdffc53317dc1dfdf
     on-pull-request:
-        runs-on: ubutu-latest
+        runs-on: ubuntu-latest
         steps:
             - name: "running pull in github"
               run: echo "running pull in github"
