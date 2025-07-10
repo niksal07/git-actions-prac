@@ -11,7 +11,7 @@ jobs:
         steps:
             - name: "running on main push"
               run: echo "Running on main push"
-
+                none
     on-pull-request:
         runs-on: ubutu-latest
         steps:
