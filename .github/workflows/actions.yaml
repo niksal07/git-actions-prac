@@ -9,8 +9,14 @@ jobs:
     on-push: #name of the job
         runs-on: ubuntu-latest
         steps:
-            - name: "running on master push"
-              run: echo "Running on master push"
+            - name: "running on main push"
+              run: echo "Running on main push"
+
+    on-pull-request:
+        runs-on: ubutu-latest
+        steps:
+            - name: "running pull in github"
+              run: echo "running pull in github"
 
 
 
