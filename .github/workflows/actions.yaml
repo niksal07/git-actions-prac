@@ -1,0 +1,17 @@
+name: "Event pipeline"
+
+on:
+    push: #event whenever a push is made in github
+        branches:
+            master
+
+jobs:
+    on-push: #name of the job
+        runs-on: ubuntu-latest
+        steps:
+            - name: "running on master push"
+              run: echo "Running on master push"
+
+
+
+
