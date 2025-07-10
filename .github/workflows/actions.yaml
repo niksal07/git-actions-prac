@@ -3,7 +3,7 @@ name: "Event pipeline"
 on:
     push: #event whenever a push is made in github
         branches:
-            master
+            main
 
 jobs:
     on-push: #name of the job
