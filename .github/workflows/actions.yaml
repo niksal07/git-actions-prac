@@ -4,6 +4,9 @@ on:
     push: #event whenever a push is made in github
         branches:
             main
+    pull_request:
+        branches:
+            main
 
 jobs:
     on-push: #name of the job
@@ -11,7 +14,11 @@ jobs:
         steps:
             - name: "running on main push"
               run: echo "Running on main push"
+<<<<<<< HEAD
                 none
+=======
+
+>>>>>>> 9b3cf8b0dc961e9173bad14bdffc53317dc1dfdf
     on-pull-request:
         runs-on: ubutu-latest
         steps:
