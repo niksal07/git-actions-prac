@@ -4,7 +4,7 @@ on:
     push: #event whenever a push is made in github
         branches:
             main
-    pull:
+    pull_request:
         branches:
             main
 
