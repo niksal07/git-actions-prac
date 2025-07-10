@@ -4,6 +4,9 @@ on:
     push: #event whenever a push is made in github
         branches:
             main
+    pull:
+        branches:
+            main
 
 jobs:
     on-push: #name of the job
