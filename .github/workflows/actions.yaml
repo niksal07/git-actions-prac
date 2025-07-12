@@ -7,19 +7,27 @@ on:
     pull_request:
         branches:
             main
+    workflow_dispatch:
 
 jobs:
     on-push: #name of the job
+        if: github.event_name == 'push'
         runs-on: ubuntu-latest
         steps:
             - name: "running on main push"
               run: echo "Running on main push"
     on-pull-request:
+        if: github.event_name == 'pull_request'
         runs-on: ubuntu-latest
         steps:
             - name: "running pull in github"
               run: echo "running pull in github"
-
+    on-workflow-dispatch:
+        if: github.event_name == 'workkflow_dispatch'
+        runs-on: ubuntu-latest
+        steps:
+            - name: "Running manual trigger"
+              run: echo "Manual trigger"
 
 
 
